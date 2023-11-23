@@ -355,3 +355,17 @@ iframe {
     height: 400px;
     margin: 30px 400px;
 }
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: gray;        
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 10px;
+}
