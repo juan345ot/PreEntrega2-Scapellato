@@ -56,7 +56,7 @@ main{
     height: 130vh;
     width: 100%;
     background-color: black;
-    background-image: url(/img/playstation-6689793_1280.jpg);
+    background-image: url(img/playstation-6689793_1280.jpg);
     background-size: cover;
     background-position:top left;
 }
