@@ -1,59 +1,51 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;300&family=Roboto:wght@300;400&display=swap');
 
-/* font-family: 'Libre Baskerville', serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; */
-*{
+body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
+    background-color: black;
+    box-sizing: border-box;
 }
 
-.header{
+/*inicio navbar*/
+
+.navbar{
     background-color: black;
     color: orange;
-    height: 80px;
-    padding: 20px;
     font-size: 22px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .logo{
-    float: left;
-    font-weight: bold;
-    font-size: 32px;
+    font-size: 30px;
     padding: 5px;
+    text-shadow: 0 0 5px white;
 }
 
-.logo span{
-    color: white;
+.logo span {
+    font-size: 34px;
 }
 
-.barra{
-    float: right;
-}
-nav ul li{
-    text-decoration: none;
-    display: inline-block;
-}
-
-nav a{
+.navbar-toggler-icon {
     color: orange;
-    text-decoration: none;
-    list-style: none;
-    padding: 5px;
-    text-shadow: 0 0 10px white; 
 }
 
-nav a:hover{
-    color: white;
+.navbar-toggler{
+    background-color: orange;
 }
+
+.nav-link{
+    text-shadow: 0 0 5px white;
+}
+
+/*fin navbar*/
+
+/*inicio seccion index*/
 
 main{
-    height: 130vh;
+    height: 800px;
     width: 100%;
     background-color: black;
     background-image: url(img/playstation-6689793_1280.jpg);
@@ -69,11 +61,6 @@ main{
     margin: 30px;
     padding: 20px;
     border-radius: 10px;
-}
-
-h1{
-    color: white;
-    margin-bottom: 20px;
 }
 
 .call a{
@@ -101,6 +88,15 @@ h1{
     border:5px solid orange;
 }
 
+.sec{
+    background-color: black;
+    color: white;
+}
+
+/*fin seccion index*/
+
+/*inicio seccion nosotros*/
+
 #sec2{
     text-align: center;
     color: orange;
@@ -110,6 +106,21 @@ h1{
     border:5px solid orange;
 }
 
+.sec2 span{
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+.sec2{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+/*fin seccion nosotros*/
+
+/*inicio seccion consolas*/
+
 #sec3{
     text-align: center;
     color: orange;
@@ -118,7 +129,16 @@ h1{
     padding: 20px;
     border:5px solid orange;
 }
+.sec3{
+    height: 1100px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
 
+/*fin seccion consolas*/
+
+/*inicio seccion juegos*/
 #sec4{
     text-align: center;
     color: orange;
@@ -127,22 +147,47 @@ h1{
     padding: 20px;
     border:5px solid orange;
 }
+.sec4s{
+    height: 1100px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
 
-#sec5{
+/*fin seccion juegos*/
+
+/*inicio seccion contacto*/
+
+.contacto{
+    background-color: orange;
+    font-size: 20px;
+    color: black;
+}
+
+.contacto form{
     text-align: center;
-    color: orange;
-    background-color: black;
-    text-transform: uppercase;
-    padding: 20px;
-    border:5px solid orange;
 }
-.sec{
-    height: 700px;
-    background-color: black;
-    padding: 20px;
 
-
+.contacto label{
+    padding: 30px;
 }
+.contacto p{
+    text-align: center;
+}
+/* fin seccion contacto*/
+
+.card{/*cartas*/
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#card2 .card-title{ /*titulo card2*/
+    padding-top: 65px;
+}
+
+/* inicio footer*/
 
 .footer{
     text-align: center;
@@ -156,30 +201,32 @@ h1{
 #pFooter{
     font-size: 34px;
 }
-
+    
 #pFooter span{
-    color: white;
+color: white;
 }
-
+    
 #pFooter1{
-    color: #333;
+color: #333;
 }
-
+    
 #pFooter2{
-    color: white;
+color: white;
 }
-
-.footer a{
-    color: orange;
-    text-decoration: none;
-    font-size: 50px;
-    letter-spacing: 20px;
+.footer a{/*footer enlaces*/
+color: orange;
+text-decoration: none;
+font-size: 50px;
+letter-spacing: 20px;
 }
-
+    
 .footer a:hover{
-    color: white;
+color: white;
 }
-.subir{
+
+/* fin footer*/
+
+.subir{/*icono subir*/
     height: 40px;
     width: 40px;
     background-color:orange;
@@ -193,8 +240,8 @@ h1{
     border-radius: 50%;
     box-shadow: 0 0 10px white;
 }
-
-.whatsapp{
+    
+.whatsapp{ /*icono whatsapp*/
     height: 40px;
     width: 40px;
     background-color:orange;
@@ -209,152 +256,7 @@ h1{
     box-shadow: 0 0 10px white;
 }
 
-.caja{
-    height: 300px;
-    width: 85%;
-    background-color: orange;
-    margin: 30px 100px;
-    padding: 30px;
-}
-#imgCaja1{
-    height: 200px;
-    width: 25%;
-    float: left;
-    padding: 20px;
-}
-
-#pCaja1{
-    float: right;
-    width: 70%;
-    padding-top: 40px;
-}
-
-#imgCaja2{
-    height: 200px;
-    width: 25%;
-    float: left;
-    padding: 20px;
-}
-
-#pCaja2{
-    float: right;
-    width: 70%;
-    padding-top: 40px;
-}
-
-.sec2 span{
-    text-decoration:underline;
-    font-weight: bold;
-}
-
-.imgNosotros{
-    width: 800px;
-    height: 400px;
-    margin: 30px 250px;
-}
-.sec2{
-    height: 1300px;
-    background-color: black;
-    padding: 20px;
-    color: white;
-}
-.sec3{
-    height: 1100px;
-    background-color: black;
-    padding: 20px;
-    color: white;
-}
-
-.sec4{
-    height: 2100px;
-    background-color: black;
-    padding: 20px;
-    color: white;
-    
-}
-
-.sec5{
-    height: 550px;
-    background-color: black;
-    padding: 20px;
-    color: white;
-}
-.productCard{
-    height: 300px;
-    width: 85%;
-    background-color: orange;
-    margin: 30px 100px;
-    padding: 30px;
-}
-.caja3 p{
-    padding-left:85% ;
-    font-size: 24px;
-    color: black;
-}
-
-.caja3 p span{
-    font-weight: bold;
-    color: white;
-}
-
-.caja3 img{
-    height: 200px;
-    width: 25%;
-    float: left;
-    padding: 20px;
-}
-
-.caja4 p{
-    padding-left:85% ;
-    font-size: 24px;
-    color: black;
-}
-
-.caja4 p span{
-    font-weight: bold;
-    color: white;
-}
-
-.caja4 img{
-    height: 250px;
-    width: 25%;
-    float: left;
-    padding: 20px;
-}
-
-.contacto{
-    height: 280px;
-    width: 85%;
-    background-color: orange;
-    margin: 30px 100px;
-    padding: 20px;
-    font-size: 20px;
-    color: black;
-}
-
-.contacto form{
-    text-align: center;
-}
-
-.contacto label{
-    padding: 30px;
-}
-
-.sec5 p{
-    text-align: center;
-    font-size: 26px;
-}
-
-.sec5 p span{
-    font-weight: bold;
-    color: orange;
-}
-
-iframe {
-    width: 400px;
-    height: 400px;
-    margin: 30px 400px;
-}
+/* inicio barra de navegacion*/
 
 ::-webkit-scrollbar{
     width: 12px;
@@ -368,4 +270,19 @@ iframe {
 ::-webkit-scrollbar-thumb {
     background-color: orange;
     border-radius: 10px;
+}
+
+/* fin barra de navegacion*/
+
+/* medias quary*/
+
+@media only screen and (max-width: 768px) {
+
+    main{
+        height: auto;
+    }
+
+    .call{
+        width: auto;
+    }
 }
