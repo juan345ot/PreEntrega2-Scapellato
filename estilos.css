@@ -13,7 +13,7 @@ font-family: 'Roboto', sans-serif; */
 
 }
 
-header{
+.header{
     background-color: black;
     color: orange;
     height: 80px;
